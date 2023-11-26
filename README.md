@@ -25,7 +25,7 @@ The project encompasses an interactive application crafted in the [Unity](https:
 - Please ensure that you have libraries installed for [ESP32](https://dl.espressif.com/dl/package_esp32_index.json) and [ESP8266](http://arduino.esp8266.com/stable/package_esp8266com_index.json) boards.
 - Visual Studio: 2022
 - Firebase SDK: firebase_unity_sdk_11.6.0
-- MRTK:[1.0.2209.0](https://www.microsoft.com/en-us/download/details.aspx?id=102778) 
+- MRTK: [1.0.2209.0](https://www.microsoft.com/en-us/download/details.aspx?id=102778) 
 ---
 ## Source Code
 
