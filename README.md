@@ -34,7 +34,7 @@ The project encompasses an interactive application crafted in the [Unity](https:
 | File | Link |
 | ---- | ---- |
 | Unity Main Script | [DataBaseManager.cs](Assets/DataBaseManager.cs) |
-| Arduino Main Script | [Controller.ino](MicroController\CloudControllerV3\) |
+| Arduino Main Script | [Controller.ino](MicroController\CloudControllerV3\CloudControllerV3.ino) |
 ---
 ## <span style="color:red">DISCLAIMER</span>
 
