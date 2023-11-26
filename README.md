@@ -40,20 +40,21 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
 | NodeMCU Code | [NodeMCUCon.ino](MicroController/NodeMCUCon/NodeMCUCon.ino) | For Potentiometer related data to Firebase and Thingspeak|
 
 ---
-## Important Information
+## Caution
 
-1. We have not uploaded the folder <em>Assets/Firebase/Plugins/x86_64/</em> due to Github's file size constraints. Hence if you want to use this project, please configure the Unity app with Firebase SDK.
-2. The google-services.json has been removed for privacy purposes. Hence make your own database.
-3. The internet information in [MicroController](MicroController/) codes have been removed for privacy purposes.
+- We have not uploaded the folder <em>Assets/Firebase/Plugins/x86_64/</em> due to Github's file size constraints. Hence if you want to use this project, please configure the Unity app with Firebase SDK.
+- The project may not work if Unity editor is not configured with MRTK.
+- The google-services.json has been removed for privacy purposes. Hence make your own database.
+- The internet information in [MicroController](MicroController/) codes have been removed for privacy purposes.
 
 ---
 ## Prerequisites
 
-1. Basic understanding of IoT devices and the Arduino.
-2. Basic understanding of the Unity Game Engine, C++ & Object Oriented programming.
+- Basic understanding of IoT devices and the Arduino.
+- Basic understanding of the Unity Game Engine, C++ & Object Oriented programming.
 
 ---
-## DISCLAIMER
+## <b>Disclaimer</b>
 
 As this is an open ended project, this doesn't contain any 3D model of any IoT device right now, but can be extended in that direction. Due to limited time (20 days) alloted to this project, it can be further extended by implementation of graphs, usage of better micro-controllers and diverse sensors. Currently, Firebase SDK does not support Universal Windows Platform, due to which the apllication can't be deployed and tested on Hololens, but we are sure enough that as soon as the SDK supports UWP, this application should be able to work on Hololens. We do not claim this to be fully error-less, and potential errors could arise even while running the code.
 
