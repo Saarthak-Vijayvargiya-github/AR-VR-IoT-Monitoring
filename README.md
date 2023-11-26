@@ -40,6 +40,13 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
 | NodeMCU Code | [NodeMCUCon.ino](MicroController/NodeMCUCon/NodeMCUCon.ino) | For Potentiometer related data to Firebase and Thingspeak|
 
 ---
+## Important Information
+
+1. We have not uploaded the folder <em>Assets/Firebase/Plugins/x86_64/</em> due to Github's file size constraints. Hence if you want to use this project, please configure the Unity app with Firebase SDK.
+2. The information in google-services.json has been removed for privacy purposes. Hence make your own database.
+3. The internet information in Microcontroller codes have been removed for privacy purposes.
+
+---
 ## Prerequisites
 
 1. Basic understanding of IoT devices and the Arduino.
