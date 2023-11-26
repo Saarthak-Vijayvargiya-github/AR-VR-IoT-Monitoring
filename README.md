@@ -31,9 +31,9 @@ The project encompasses an interactive application crafted in the [Unity](https:
 | Main Script | [DataBaseManager.cs](Assets/DataBaseManager.cs) | Manages the initial communication between Unity and Firebase |
 | Distance Script | [Distance.cs](Assets/Distance.cs) | Receives and displays distance related data |
 | Distance Script | [DCMotor.cs](Assets/DCMotor.cs) | Receives and displays potentiometer related data |
-| Distance Script | [Servo.cs](Assets/Servo.cs) | Receives and displays servo related data |
-| ESP32 Code | [CloudControllerV3.ino](MicroController/CloudControllerV3/CloudControllerV3.ino) | For Distance and Servo motor |
-| NodeMCU Code | [NodeMCUCon.ino](MicroController/NodeMCUCon/NodeMCUCon.ino) | For Potentiometer |
+| Distance Script | [Servo.cs](Assets/Servo.cs) | Sends and displays servo related data |
+| ESP32 Code | [CloudControllerV3.ino](MicroController/CloudControllerV3/CloudControllerV3.ino) | For Distance and Servo motor (Firebase) |
+| NodeMCU Code | [NodeMCUCon.ino](MicroController/NodeMCUCon/NodeMCUCon.ino) | For Potentiometer related data to Firebase and Thingspeak|
 
 ---
 ## Prerequisites
