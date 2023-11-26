@@ -3,8 +3,10 @@
 This project work represents a partial completion of the EEE F411 Internet of Things course instructed by [Dr. Vinay Chamola](https://web.bits-pilani.ac.in/pilani/vinaychamola/profile), Associate Professor at BITS Pilani, Rajasthan. The primary emphasis of the project is on overseeing and managing industrial machinery through augmented reality (AR) headsets such as [Hololens](https://www.microsoft.com/en-us/hololens). It serves as an illustration of how IoT-enabled machines can be supervised and operated using an application compatible with Hololens.
 
 ## Prerequisites
+
 1. Basic understanding of IoT devices and the Arduino.
 2. Basic understanding of the Unity Game Engine, C++ & Object Oriented programming.
+
 ---
 ## How it works
 
