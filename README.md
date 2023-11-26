@@ -38,7 +38,7 @@ The project encompasses an interactive application crafted in the [Unity](https:
 2. Basic understanding of the Unity Game Engine, C++ & Object Oriented programming.
 
 ---
-## <p style="color:red">DISCLAIMER</p>
+## DISCLAIMER
 
 As this is an open ended project, this doesn't contain any 3D model of any IoT device right now, but can be extended in that direction. Due to limited time (20 days) alloted to this project, it can be further extended by implementation of graphs, usage of better micro-controllers and diverse sensors. Currently, Firebase SDK does not support Universal Windows Platform, due to which the apllication can't be deployed and tested on Hololens, but we are sure enough that as soon as the SDK supports UWP, this application should be able to work on Hololens. We do not claim this to be fully error-less, and potential errors could arise even while running the code.
 
