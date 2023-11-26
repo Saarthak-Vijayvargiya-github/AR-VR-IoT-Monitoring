@@ -1,14 +1,14 @@
 {
   "project_info": {
-    "project_number": "520602823854",
-    "firebase_url": "https://arvriot-default-rtdb.firebaseio.com",
+    "project_number": "",
+    "firebase_url": "",
     "project_id": "arvriot",
     "storage_bucket": "arvriot.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:520602823854:android:eeb1757038aa99a42b113f",
+        "mobilesdk_app_id": "",
         "android_client_info": {
           "package_name": "com.arvriot.firebasedb"
         }
@@ -16,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDYSLqmzScLQnx1ouhixEXOy-nMbSTSxiM"
+          "current_key": ""
         }
       ],
       "services": {
