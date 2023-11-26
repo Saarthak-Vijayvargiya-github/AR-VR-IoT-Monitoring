@@ -19,7 +19,7 @@ The project encompasses an interactive application crafted in the [Unity](https:
 ## Software Versions
 - Unity: 2022.3.12f1
 - Arduino IDE: Any version (Here 1.8.19)
-- Please ensure that you have libraries installed for [ESP32](https://dl.espressif.com/dl/package_esp32_index.json) and [ESP8266](http://arduino.esp8266.com/stable/package_esp8266com_index.json) boards.
+- Please ensure that you have libraries installed for [ESP32](https://randomnerdtutorials.com/getting-started-with-esp32/#esp32-arduino-ide) and [ESP8266](https://randomnerdtutorials.com/how-to-install-esp8266-board-arduino-ide/) boards.
 - Visual Studio: 2022
 - Firebase SDK: firebase_unity_sdk_11.6.0
 - MRTK: [1.0.2209.0](https://www.microsoft.com/en-us/download/details.aspx?id=102778) 
