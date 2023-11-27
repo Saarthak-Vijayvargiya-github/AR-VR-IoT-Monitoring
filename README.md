@@ -48,10 +48,12 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
   <tr>
      <td align="center"><b>Diagram</b></td>
      <td align="center"><b>Implementation</b></td>
+     <td align="center"><b>User Interface</b></td>
   </tr>
   <tr>
     <td><img src="Images/CircuitDiagram.png" width=500></td>
     <td><img src="Images/OGCircuit.jpg" width=500></td>
+    <td><img src="Images/UIworking.png" width=500></td>
   </tr>
 </table>
 
