@@ -58,7 +58,7 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
 ---
 ## Disclaimer
 
-As this is an open ended project, this doesn't contain any 3D model of any IoT device right now, but can be extended in that direction. Due to limited time (20 days) alloted to this project, it can be further extended by implementation of graphs, usage of better micro-controllers and diverse sensors. Currently, Firebase SDK does not support Universal Windows Platform, due to which the apllication can't be deployed and tested on Hololens, but we are sure enough that as soon as the SDK supports UWP, this application should be able to work on Hololens. We do not claim this to be fully error-less, and potential errors could arise even while running the code.
+As this is an open-ended project, it currently does not include any 3D models of IoT devices, but there is potential for expansion in that direction. Due to the limited time allocated for this project (20 days), further enhancements could involve the incorporation of graphs, the utilization of more advanced microcontrollers, and the integration of various sensors. Currently, the Firebase SDK does not support the Universal Windows Platform (UWP), preventing the deployment and testing of the application on Hololens. However, we are confident that once the SDK supports UWP, the application should be able to work on Hololens. It's important to note that we do not claim the code to be entirely error-free, and there may be potential errors during its execution.
 
 ---
 ## Have fun! Thank-You!
