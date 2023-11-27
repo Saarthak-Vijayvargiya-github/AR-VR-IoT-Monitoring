@@ -44,7 +44,7 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
 ---
 ## Setup
 
-[](Images/CircuitDiagram.png)
+![](Images/CircuitDiagram.png)
 
 ---
 ## Caution
