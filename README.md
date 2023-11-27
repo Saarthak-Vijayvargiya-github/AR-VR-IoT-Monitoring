@@ -43,9 +43,17 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
 
 ---
 ## Setup
-|       Diagram     | Implementation |
-| ----------------- | -------------- |
-| ![](Images/CircuitDiagram.png) | ![](Images/OGCircuit.jpg) |
+
+<table>
+  <tr>
+     <td>Diagram</td>
+     <td>Implementation</td>
+  </tr>
+  <tr>
+    <td><img src="Images/CircuitDiagram.png" width=500></td>
+    <td><img src="Images/OGCircuit.jpg" width=500></td>
+  </tr>
+ </table>
 
 ---
 ## Caution
