@@ -46,8 +46,8 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
 
 <table>
   <tr>
-     <td align="center">Diagram</td>
-     <td align="center">Implementation</td>
+     <td align="center"><b>Diagram</b></td>
+     <td align="center"><b>Implementation</b></td>
   </tr>
   <tr>
     <td><img src="Images/CircuitDiagram.png" width=500></td>
