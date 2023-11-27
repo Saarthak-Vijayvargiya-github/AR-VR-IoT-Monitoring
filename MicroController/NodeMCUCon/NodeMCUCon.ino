@@ -6,6 +6,7 @@
 #include <Firebase_ESP_Client.h>
 #include "addons/TokenHelper.h"
 #include "addons/RTDBHelper.h"
+#include<ThingSpeak.h>
 
 #define WIFI_SSID "your-wifi-ssid"
 #define WIFI_PASSWORD "your-wifi-pass"
@@ -21,6 +22,7 @@ WiFiClient client;
 
 bool signupOK = false;
 unsigned long sendDataPrevMillis = 0;
+short countError = 0;
 String dcMotorInstance = "dcMotor";
 String sysInstance = "system";
 
@@ -73,12 +75,14 @@ void DCMotorData(){
   }
   else {
     Serial.println("FAILED! REASON: " + fbdo.errorReason());
+    countError++;
   }
   if (Firebase.RTDB.setInt(&fbdo, dcMotorInstance + "/dutyCycle", dutyCycle)){
     //Serial.println("PATH: " + fbdo.dataPath());
   }
   else {
     Serial.println("FAILED! REASON: " + fbdo.errorReason());
+    countError++;
   }
 }
 
@@ -94,5 +98,9 @@ void loop(){
     if ((millis() - sendDataPrevMillis) > 15000 || sendDataPrevMillis == 0){
       ThingSpeak.writeField(CHANNEL_ID, 1, dutyCycle, WRITE_API_KEY);
       sendDataPrevMillis = millis();
+    }
+    if(countError > 100){
+      countError = 0;
+      ESP.restart();
     }
 }
