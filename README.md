@@ -32,7 +32,7 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
 ---
 ## Source Code
 
-| File | Link | Desciption |
+| File | Link | Description |
 | ---- | ---- | ---------- |
 | Database Script | [DataBaseManager.cs](Assets/DataBaseManager.cs) | Starts communication between Unity and Firebase and manages the overall display |
 | Distance Script | [Distance.cs](Assets/Distance.cs) | Receives and displays distance related data |
