@@ -60,7 +60,7 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
 ---
 ## Caution
 
-- We have not uploaded the folder <em>[Assets/Firebase/Plugins/](Assets/Firebase/)</em> due to Github's file size constraints. Hence if you want to use this project, please configure the application with Firebase SDK inside Unity.
+- We have not uploaded the folder <em>[Assets/Firebase/](Assets/Firebase/)Plugins/</em> due to Github's file size constraints. Hence if you want to use this project, please configure the application with Firebase SDK inside Unity.
 - The project may not work if Unity editor is not configured with MRTK.
 - The google-services.json has been removed for privacy purposes. Hence make your own database.
 - The internet information in [MicroController](MicroController/) codes have been removed for privacy purposes.
