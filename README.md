@@ -3,7 +3,7 @@
 This project work represents a partial completion of the EEE F411 Internet of Things course instructed by [Dr. Vinay Chamola](https://web.bits-pilani.ac.in/pilani/vinaychamola/profile), Associate Professor at BITS Pilani, Rajasthan. The primary emphasis of the project is on overseeing and managing industrial machinery through augmented reality (AR) headsets such as [Hololens](https://www.microsoft.com/en-us/hololens). It serves as an illustration of how IoT-enabled machines can be supervised and operated using an application compatible with Hololens.
 
 ---
-## What's inside
+## What's Inside
 
 The project encompasses an interactive application crafted in the [Unity](https://unity.com/) Game Engine specifically designed for use with Hololens. The IoT circuit becomes operational, transmitting and receiving data, only when both power supply and WiFi connectivity are simultaneously available. Real-time data collected from the distance sensor and potentiometer is seamlessly sent to Google's [Firebase](https://firebase.google.com/) Realtime Database, where it is promptly updated in the Unity app in real-time. The status of working of all the controllers and sensors are also updated in real time.
 
@@ -34,7 +34,7 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
 
 | File | Link | Desciption |
 | ---- | ---- | ---------- |
-| Database Script | [DataBaseManager.cs](Assets/DataBaseManager.cs) | Starts communication between Unity and Firebase, manages overall display |
+| Database Script | [DataBaseManager.cs](Assets/DataBaseManager.cs) | Starts communication between Unity and Firebase and manages the overall display |
 | Distance Script | [Distance.cs](Assets/Distance.cs) | Receives and displays distance related data |
 | Potentiometer Script | [DCMotor.cs](Assets/DCMotor.cs) | Receives and displays potentiometer related data |
 | Servo Script | [Servo.cs](Assets/Servo.cs) | Sends and displays servo related data |
