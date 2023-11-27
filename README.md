@@ -11,7 +11,7 @@ The micro-controllers are programmed to automatically restart themselves in case
 
 A standout feature in our project was the introduction of a slider mechanism, allowing users to control the servo motor's angle. This not only emphasized user-centric design but also used an engaging element in the control system. The value of the slider mechanism sets the angle of the servo motor via database.
 
-Additionally, the values recorded by potentiometer are periodically sent to the [ThingSpeak](https://thingspeak.com/) from which various graphs and MATLAB Visualisations can be obtained. Inside the app, a <em>Monitor</em> button is made which displays the data recorded in ThingSpeak in a form of a colourful graph.
+Additionally, the values recorded by potentiometer are periodically sent to the [ThingSpeak](https://thingspeak.com/) from which various graphs and MATLAB Visualisations can be obtained. Inside the app, a <em>Monitor</em> button is made which displays the data recorded in ThingSpeak in a form of a colourful [graph](Images/ThingSpeakGraph.png).
 
 ---
 ## Hardware Used
@@ -40,6 +40,11 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
 | Servo Script | [Servo.cs](Assets/Servo.cs) | Sends and displays servo related data |
 | ESP32 Code | [CloudControllerV3.ino](MicroController/CloudControllerV3/CloudControllerV3.ino) | For Distance and Servo motor (Firebase) |
 | NodeMCU Code | [NodeMCUCon.ino](MicroController/NodeMCUCon/NodeMCUCon.ino) | For Potentiometer related data to Firebase and Thingspeak|
+
+---
+## Setup
+
+[](Images/CircuitDiagram.png)
 
 ---
 ## Caution
