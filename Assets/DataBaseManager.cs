@@ -35,44 +35,7 @@ public class DataBaseManager : MonoBehaviour
             dbReference.Child(sysInstance).Child("buttonState").SetValueAsync(false);
         }
     }
-    /*public void Display()
-    {
-        try
-        {
-            StartCoroutine(GetConWorkData((bool getConStatus) =>
-            {
-                conWorkStatus = getConStatus;
-            }));
-        }
-        catch { }
-        if (buttonState == true && conWorkStatus == true)
-        {
-            try
-            {
-                buttonText.text = "Tap to OFF";
-                buttonText.color = Color.green;
-            }
-            catch { }
-        }
-        else if (buttonState == true && conWorkStatus != true)
-        {
-            try
-            {
-                buttonText.text = "MicroController OFF!";
-                buttonText.color = Color.red;
-            }
-            catch { }
-        }
-        else
-        {
-            try
-            {
-                buttonText.text = "Tap to ON";
-                buttonText.color = Color.black;
-            }
-            catch { }
-        }
-    }*/
+
     public void Display()
     {
         try
@@ -139,6 +102,7 @@ public class DataBaseManager : MonoBehaviour
         }
         catch { }
     }
+
     private IEnumerator GetConWorkData(Action<bool> onCallback)
     {
         var conWorkData = dbReference.Child(sysInstance).Child("controller").GetValueAsync();
@@ -159,7 +123,16 @@ public class DataBaseManager : MonoBehaviour
             onCallback.Invoke(bool.Parse(snapshot.Value.ToString()));
         }
     }
-
+    private IEnumerator CheckStatus()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(30f);
+            dbReference.Child(sysInstance).Child("controller").SetValueAsync(false);
+            yield return new WaitForSeconds(30f);
+            dbReference.Child(sysInstance).Child("controller2").SetValueAsync(false);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -169,6 +142,7 @@ public class DataBaseManager : MonoBehaviour
         dbReference.Child(distInstance).Child("distWorking").SetValueAsync(false);
         dbReference.Child(dcMotorInstance).Child("dcMotorWorking").SetValueAsync(false);
         dbReference.Child(servoInstance).Child("servoWorking").SetValueAsync(false);
+        StartCoroutine(CheckStatus());
     }
 
     // Update is called once per frame
