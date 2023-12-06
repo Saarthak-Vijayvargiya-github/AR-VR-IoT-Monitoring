@@ -13,7 +13,7 @@ public class DCMotor : DataBaseManager
     private static string GraphUrl = "https://thingspeak.com/channels/2266759/charts/1?bgcolor=%23000000&color=%23fff222&dynamic=true&max=100&min=0&results=10&title=Motor+Database&type=line";
 
     // Getting the required data from Firebase
-    private IEnumerator GetDCMotorData(Action<int> onCallback)
+    private IEnumerator GetDCMotorData(Action<int> onCallback)          // Gets DutyCycle
     {
         var dcMotorData = dbReference.Child(dcMotorInstance).Child("dutyCycle").GetValueAsync();
         yield return new WaitUntil(predicate: () => dcMotorData.IsCompleted);
@@ -23,7 +23,7 @@ public class DCMotor : DataBaseManager
             onCallback.Invoke(int.Parse(snapshot.Value.ToString()));
         }
     }
-    private IEnumerator GetDCMWorkData(Action<bool> onCallback)
+    private IEnumerator GetDCMWorkData(Action<bool> onCallback)         // Gets working status
     {
         var dcmWorkData = dbReference.Child(dcMotorInstance).Child("dcMotorWorking").GetValueAsync();
         yield return new WaitUntil(predicate: () => dcmWorkData.IsCompleted);

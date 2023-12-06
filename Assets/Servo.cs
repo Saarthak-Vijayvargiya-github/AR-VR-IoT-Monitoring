@@ -27,7 +27,7 @@ public class Servo : DataBaseManager
     }
 
     // Getting the required data from Firebase
-    private IEnumerator GetServoWorkData(Action<bool> onCallback)
+    private IEnumerator GetServoWorkData(Action<bool> onCallback)       // Gets working status
     {
         var servoWorkData = dbReference.Child(servoInstance).Child("servoWorking").GetValueAsync();
         yield return new WaitUntil(predicate: () => servoWorkData.IsCompleted);

@@ -11,7 +11,7 @@ public class Distance : DataBaseManager
     private static bool distWorkStat = false;
 
     // Getting the required data from Firebase
-    private IEnumerator GetDistanceData(Action<int> onCallback)
+    private IEnumerator GetDistanceData(Action<int> onCallback)         // Gets Distance
     {
         var distanceData = dbReference.Child(distInstance).Child("distance").GetValueAsync();
         yield return new WaitUntil(predicate: () => distanceData.IsCompleted);
@@ -21,7 +21,7 @@ public class Distance : DataBaseManager
             onCallback.Invoke(int.Parse(snapshot.Value.ToString()));
         }
     }
-    private IEnumerator GetDistWorkData(Action<bool> onCallback)
+    private IEnumerator GetDistWorkData(Action<bool> onCallback)        // Gets working status
     {
         var distWorkData = dbReference.Child(distInstance).Child("distWorking").GetValueAsync();
         yield return new WaitUntil(predicate: () => distWorkData.IsCompleted);
