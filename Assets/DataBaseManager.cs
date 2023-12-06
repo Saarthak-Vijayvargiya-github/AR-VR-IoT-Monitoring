@@ -20,6 +20,7 @@ public class DataBaseManager : MonoBehaviour
     protected static string dcMotorInstance = "dcMotor";
     protected static string servoInstance = "servo";
 
+    // Tracks ON/OFF Button
     public void ButtonPressed()
     {
         buttonState = !buttonState;
@@ -36,6 +37,7 @@ public class DataBaseManager : MonoBehaviour
         }
     }
 
+    // Manages Display
     public void Display()
     {
         try
@@ -103,6 +105,7 @@ public class DataBaseManager : MonoBehaviour
         catch { }
     }
 
+    // Get working status of ESP32
     private IEnumerator GetConWorkData(Action<bool> onCallback)
     {
         var conWorkData = dbReference.Child(sysInstance).Child("controller").GetValueAsync();
@@ -113,6 +116,7 @@ public class DataBaseManager : MonoBehaviour
             onCallback.Invoke(bool.Parse(snapshot.Value.ToString()));
         }
     }
+    // Get working status of NodeMCU
     private IEnumerator GetCon2WorkData(Action<bool> onCallback)
     {
         var conWorkData = dbReference.Child(sysInstance).Child("controller2").GetValueAsync();
@@ -123,6 +127,7 @@ public class DataBaseManager : MonoBehaviour
             onCallback.Invoke(bool.Parse(snapshot.Value.ToString()));
         }
     }
+    // Below checks the status of controllers every minute.
     private IEnumerator CheckStatus()
     {
         while (true)

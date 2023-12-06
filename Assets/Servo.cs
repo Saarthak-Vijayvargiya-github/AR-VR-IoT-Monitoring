@@ -11,6 +11,7 @@ public class Servo : DataBaseManager
     private static bool servoWorkStat = false;
     private static int servoAngle = 0;
 
+    // Sending Angle data to Firebase
     public void SetServoData(float angle)
     {
         servoAngle = (int)angle;
@@ -24,6 +25,8 @@ public class Servo : DataBaseManager
             print(ex.ToString());
         }
     }
+
+    // Getting the required data from Firebase
     private IEnumerator GetServoWorkData(Action<bool> onCallback)
     {
         var servoWorkData = dbReference.Child(servoInstance).Child("servoWorking").GetValueAsync();
@@ -34,6 +37,8 @@ public class Servo : DataBaseManager
             onCallback.Invoke(bool.Parse(snapshot.Value.ToString()));
         }
     }
+
+    // Manages Servo display variables
     public void ServoDisplay()
     {
         try

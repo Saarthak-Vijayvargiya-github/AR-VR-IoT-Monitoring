@@ -10,6 +10,7 @@ public class Distance : DataBaseManager
     [SerializeField] private TextMeshProUGUI distStatus;              // Display on status panel
     private static bool distWorkStat = false;
 
+    // Getting the required data from Firebase
     private IEnumerator GetDistanceData(Action<int> onCallback)
     {
         var distanceData = dbReference.Child(distInstance).Child("distance").GetValueAsync();
@@ -30,6 +31,8 @@ public class Distance : DataBaseManager
             onCallback.Invoke(bool.Parse(snapshot.Value.ToString()));
         }
     }
+
+    // Manages Distance display variables
     public void DistSensorDisplay()
     {
         try

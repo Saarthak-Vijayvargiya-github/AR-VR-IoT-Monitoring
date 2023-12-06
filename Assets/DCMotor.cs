@@ -12,6 +12,7 @@ public class DCMotor : DataBaseManager
     private static bool dcmWorkStat = false;
     private static string GraphUrl = "https://thingspeak.com/channels/2266759/charts/1?bgcolor=%23000000&color=%23fff222&dynamic=true&max=100&min=0&results=10&title=Motor+Database&type=line";
 
+    // Getting the required data from Firebase
     private IEnumerator GetDCMotorData(Action<int> onCallback)
     {
         var dcMotorData = dbReference.Child(dcMotorInstance).Child("dutyCycle").GetValueAsync();
@@ -32,10 +33,14 @@ public class DCMotor : DataBaseManager
             onCallback.Invoke(bool.Parse(snapshot.Value.ToString()));
         }
     }
+
+    // Opens ThingSpeak website in any web browser 
     public void OpenWebsite()
     {
         Application.OpenURL(GraphUrl);
     }
+
+    // Manages Potentiometer/ DCMotor display variables
     public void DCMotorDisplay()
     {
         try
