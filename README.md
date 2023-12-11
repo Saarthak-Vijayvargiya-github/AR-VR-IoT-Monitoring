@@ -1,6 +1,6 @@
 # AR Monitoring and Control Of Industrial IoT devices
 
-This project work represents a partial completion of the EEE F411 Internet of Things course instructed by [Dr. Vinay Chamola](https://web.bits-pilani.ac.in/pilani/vinaychamola/profile), Associate Professor at BITS Pilani, Rajasthan. The primary emphasis of the project is on overseeing and managing industrial machinery through augmented reality (AR) headsets such as [Hololens](https://www.microsoft.com/en-us/hololens). It serves as an illustration of how IoT-enabled machines can be supervised and operated using an application compatible with Hololens.
+This project work represents a partial completion of the EEE F411 Internet of Things course instructed by [Dr. Vinay Chamola](https://www.bits-pilani.ac.in/pilani/vinay-chamola/), Associate Professor at BITS Pilani, Rajasthan. The primary emphasis of the project is on overseeing and managing industrial machinery through augmented reality (AR) headsets such as [Hololens](https://www.microsoft.com/en-us/hololens). It serves as an illustration of how IoT-enabled machines can be supervised and operated using an application compatible with Hololens.
 
 ---
 ## What's Inside
