@@ -58,7 +58,7 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
 </table>
 
 
-[](Images/Demo_Vid1.mp4)
+[Video](Images/Demo_Vid1.mp4)
 ---
 ## Caution
 
