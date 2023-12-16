@@ -57,12 +57,6 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
   </tr>
 </table>
 
-
-<video width="640" height="360" controls>
-    <source src="Images/Demo_Vid1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
 ---
 ## Caution
 
