@@ -57,6 +57,8 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
   </tr>
 </table>
 
+The actual working of the system is shown in the form of a [video](Images/Demo_Vid1.mp4), which can be downloaded and watched.
+
 ---
 ## Caution
 
