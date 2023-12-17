@@ -57,7 +57,10 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
   </tr>
 </table>
 
-The actual working of the system is shown in the form of a [video](Images/Demo_Vid1.mp4), which can be downloaded and watched.
+The actual working of the system is shown in the form of a [video](Images/Demo_Vid1.mp4), which can be downloaded and watched. You can also watch the same below but <strong>make sure to switch the playback speed to 0.25x</strong>.
+
+https://github.com/Saarthak-Vijayvargiya-github/AR-VR-IoT-Monitoring/assets/96655833/5fd22154-9668-400b-8370-a8ddba5f90de
+
 
 ---
 ## Caution
