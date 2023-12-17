@@ -52,7 +52,7 @@ Additionally, the values recorded by potentiometer are periodically sent to the 
   </tr>
   <tr>
     <td><img src="https://github.com/Saarthak-Vijayvargiya-github/AR-VR-IoT-Monitoring/assets/96655833/83e2b742-4e53-4c10-9b6c-325c32db1e46" width=500></td>
-    <td><img src="![OGCircuit](https://github.com/Saarthak-Vijayvargiya-github/AR-VR-IoT-Monitoring/assets/96655833/88cec7f4-abe0-46ba-8201-082b507d07bd)" width=500></td>
+    <td><img src="https://github.com/Saarthak-Vijayvargiya-github/AR-VR-IoT-Monitoring/assets/96655833/88cec7f4-abe0-46ba-8201-082b507d07bd" width=500></td>
     <td><img src="https://github.com/Saarthak-Vijayvargiya-github/AR-VR-IoT-Monitoring/assets/96655833/b08ada76-eeac-45b9-8e8b-b2f5dc216d6c" width=500></td>
   </tr>
 </table>
