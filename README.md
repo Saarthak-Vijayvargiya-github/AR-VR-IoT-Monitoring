@@ -82,4 +82,9 @@ https://github.com/Saarthak-Vijayvargiya-github/AR-VR-IoT-Monitoring/assets/9665
 As this is an open-ended project, it currently does not include any 3D models of IoT devices, but there is potential for expansion in that direction. Further enhancements could involve the incorporation of graphs, the utilization of more advanced microcontrollers, and the integration of various sensors. Currently, the Firebase SDK does not support the Universal Windows Platform (UWP), preventing the deployment and testing of the application on Hololens. However, we are confident that once the SDK supports UWP, the application should be able to work on Hololens. It's important to note that we do not claim the code to be entirely error-free, and there may be potential errors during its execution.
 
 ---
+## Contributors:
+1) Saarthak Vijayvargiya (BITS Pilani University)
+2) Niranjan Chaudhari (BITS Pilani University)
+
+---
 ## Have fun! Thank-You!
